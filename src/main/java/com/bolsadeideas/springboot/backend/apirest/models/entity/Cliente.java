@@ -3,7 +3,6 @@ package com.bolsadeideas.springboot.backend.apirest.models.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,6 +11,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
+import jakarta.validation.constraints.NotNull;
 
 
 
@@ -29,11 +29,11 @@ public class Cliente implements Serializable {
 	private String nombre;
 	
 	private String apellido;
-	@Column(nullable=false ,unique=true)
+	@Column(nullable=false ,unique=false)
 	private String email;
 	
+	@NotNull (message = "no puede estar vacio")
 	@Column(name="create_at")
-	
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
 

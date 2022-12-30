@@ -65,7 +65,6 @@ public class ClienteRestController {
 
 	@PostMapping("/clientes")
 	public ResponseEntity<?> create( @RequestBody Cliente cliente) {
-		cliente.setCreateAt(new Date());
 		Cliente clienteNew = null;
 		Map<String, Object> response = new HashMap<>();
 
