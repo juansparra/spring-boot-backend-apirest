@@ -29,6 +29,9 @@ private IUsuarioDao usuarioDao;
 	@Override
 	@Transactional(readOnly = true)
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		
+		
+		
 		Usuario usuario = usuarioDao.findByUsername(username);
 		
 		if(usuario == null) {
@@ -47,3 +50,4 @@ private IUsuarioDao usuarioDao;
 	}
 
 }
+ 

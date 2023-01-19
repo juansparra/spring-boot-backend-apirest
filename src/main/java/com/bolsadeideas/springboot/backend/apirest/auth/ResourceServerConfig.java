@@ -1,4 +1,4 @@
-package com.bolsadeideas.springboot.backend.apirest.auth;
+/*package com.bolsadeideas.springboot.backend.apirest.auth;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -18,3 +18,4 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 	}
 
 }
+*/
